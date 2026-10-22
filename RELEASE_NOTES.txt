@@ -1,0 +1,14 @@
+DistroFill 1.1.7
+
+Your release, ready when you return.
+
+• Local draft autosave now restores dropped tracks, metadata edits, unfinished bulk edits, and your selected tab when you reopen DistroFill or restart Chrome.
+• Open DistroFill in Chrome’s side panel using the arrow below Fill. Your popup and panel share the same draft.
+• Refreshed light and dark themes, clearer controls, and aligned theme and license buttons.
+• Animated gradients on the Fill button and header divider, with reduced-motion support.
+• Improved destination validation, safer filename display, and reduced sensitive license logging.
+• Fixed restoration of intentionally empty fields and refreshing after stripping comments.
+
+Audio processing and saved audio drafts remain on your device. Clear tracks removes the saved track draft. Existing subscriptions and activation behavior are unchanged.
+
+Requires Chrome 116 or later. This update adds the sidePanel permission for the optional side panel.
