@@ -1,4 +1,6 @@
 DistroFill 1.1.7
+Submitted October 22, 2026 — pending Chrome Web Store review.
+Version 1.1 remains live; 1.1.7 will be published manually after approval.
 
 Your release, ready when you return.
 

@@ -4,7 +4,7 @@
 
 DistroFill is a Chrome extension for release information, credits, track titles, and local audio metadata editing. Use the compact popup or keep your workspace beside DistroKid in Chrome’s side panel.
 
-**Current prepared version: 1.1.7.** This update has not been published to the Chrome Web Store yet.
+**Version 1.1.7 is pending Chrome Web Store review** (submitted October 22, 2026). Version 1.1 remains the published store release. The side panel, refreshed interface, and full draft restoration described below are part of 1.1.7. Publication will be manual after Google approves the update.
 
 [Get DistroFill on the Chrome Web Store](https://chromewebstore.google.com/detail/distrofill/gmbiefhjnnfjmffkhldnpfdkaabkdcfb)
 
@@ -45,7 +45,7 @@ Popup and panel instances share draft updates. Simultaneous changes to the same 
 - Purchase buttons open Gumroad checkout pages.
 - The interface references Google Fonts, which can cause network requests when the interface loads.
 
-“Nothing ever leaves your device” is therefore not an accurate description of every part of the extension. Audio stays local; licensing and font delivery involve external services.
+Read the [Privacy Policy](PRIVACY.md) for the information handled, external services, retention, and local-data controls.
 
 ## Access and compatibility
 
@@ -77,7 +77,26 @@ npm run build
 
 The build writes a sibling `DistroFill-1.1.7/` release directory and a source/release hash record. Terser performs conservative minification; compression, property renaming, top-level renaming, wrapping, and source maps are disabled. No code obfuscation is used. Keep the private source/build project separate from the store upload ZIP.
 
-See [CHANGELOG.md](CHANGELOG.md) for the prepared update history.
+## Version history
+
+### 1.1.7 — pending review (October 22, 2026)
+
+- Optional side panel, opened by the arrow below Fill, with a shared popup/panel workspace.
+- Local draft autosave restores dropped audio, metadata edits, unfinished bulk edits, and the selected tab across popup closure and Chrome restart.
+- Refreshed light and dark themes, aligned key and theme controls, and animated gradients with reduced-motion support.
+- **Security fixes:** validate the exact HTTPS DistroKid destination before filling and again during injection; render audio titles and folder names as escaped text; remove full Gumroad verification-response logging.
+- Fix restoration of intentionally empty fields and metadata refresh after stripping comments.
+- Existing activation, subscription behavior, and free-use limits are preserved.
+
+### 1.1 — published store release
+
+The published version inspected before preparing 1.1.7. A separate historical change list for 1.1 was not available for verification.
+
+### 1.0 — initial release
+
+Release and credit form filling, saved artist profiles, track filename parsing, local audio metadata editing/export, light and dark themes, and onboarding.
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed changes and validation, or [RELEASE_NOTES.txt](RELEASE_NOTES.txt) for the concise release notes.
 
 ---
 

@@ -1,8 +1,8 @@
 # Changelog
 
-## 1.1.7 — prepared, not published
+## 1.1.7 — pending Chrome Web Store review (October 22, 2026)
 
-This is the next prepared update after the inspected store version 1.1. Versions 1.1.1–1.1.6 were intermediate local candidates, not separate published releases.
+Submitted to Google on October 22, 2026. Automatic publication is disabled; publication will be manual after approval. Version 1.1 remains the published store release. Versions 1.1.1–1.1.6 were intermediate local candidates, not separate published releases.
 
 ### Added
 
@@ -43,3 +43,14 @@ This is the next prepared update after the inspected store version 1.1. Versions
 - 22 isolated regression checks passed against the minified build.
 - 12 native Chrome checks passed, including saved activation and data preservation, dropped File-byte restoration, full browser restart, popup/panel synchronization, Clear behavior, write-failure recovery, and real side-panel opening.
 - Testing used synthetic audio and fake activation in disposable profiles; no production subscriptions were modified.
+
+## 1.1 — published store release
+
+The published version inspected before preparing 1.1.7. A separate historical change list for 1.1 was not available for verification.
+
+## 1.0 — initial release
+
+- Release information, credits, and track-title form filling for DistroKid.
+- Named artist profiles and audio drag-and-drop with filename parsing.
+- Local metadata reading, editing, bulk editing, and export for supported formats.
+- Light and dark themes, saved form fields, and first-launch onboarding.
