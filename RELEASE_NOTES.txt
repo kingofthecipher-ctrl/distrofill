@@ -6,8 +6,12 @@ Your release, ready when you return.
 • Open DistroFill in Chrome’s side panel using the arrow below Fill. Your popup and panel share the same draft.
 • Refreshed light and dark themes, clearer controls, and aligned theme and license buttons.
 • Animated gradients on the Fill button and header divider, with reduced-motion support.
-• Improved destination validation, safer filename display, and reduced sensitive license logging.
 • Fixed restoration of intentionally empty fields and refreshing after stripping comments.
+
+Security fixes
+• Restricted form filling to validated HTTPS DistroKid destinations, including a second check if the active tab navigates during a fill.
+• Fixed unsafe rendering of audio titles and export-folder names so names display as text instead of being interpreted as HTML.
+• Removed full license-verification response logging to avoid exposing customer/license details in console output.
 
 Audio processing and saved audio drafts remain on your device. Clear tracks removes the saved track draft. Existing subscriptions and activation behavior are unchanged.
 

@@ -19,11 +19,15 @@ This is the next prepared update after the inspected store version 1.1. Versions
 - Side-by-side license and theme buttons with the redundant header label removed.
 - Panel opening waits for the draft save; failed draft saves report an error and preserve the popup.
 
-### Fixed
+### Security fixes
 
-- Misleading-URL acceptance in destination checks; exact HTTPS origins are validated before filling and inside the target function.
-- HTML interpretation of audio titles and export-folder names.
-- Full license-verification response logging.
+- Restricted form filling to exact HTTPS DistroKid root/www origins, preventing saved release details from being filled into unrelated sites with misleading URLs.
+- Recheck the target origin inside the injected function to block filling if the tab navigates between selection and injection.
+- Escape audio titles, extensions, and export-folder names when rendering the interface, preventing those names from being interpreted as HTML. Arbitrary JavaScript execution was not established.
+- Removed logging of full Gumroad verification responses, which can contain customer and license information.
+- Subscription acceptance and existing activation remain unchanged; this update does not add cancellation/refund enforcement.
+
+### Fixed
 - Restoration of intentionally empty form fields.
 - Incorrect metadata renderer call after stripping comments.
 
